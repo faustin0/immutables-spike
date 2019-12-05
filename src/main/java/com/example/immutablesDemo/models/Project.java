@@ -21,7 +21,6 @@ public interface Project {
     String webUrl();
 
     @JsonProperty("avatar_url")
-    @Nullable
     Object avatarUrl();
 
     @JsonProperty("git_ssh_url")
