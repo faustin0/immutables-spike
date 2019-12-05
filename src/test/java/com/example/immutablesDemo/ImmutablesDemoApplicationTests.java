@@ -35,7 +35,6 @@ class ImmutablesDemoApplicationTests {
 
 
 		Assertions.assertThat(jsonNode.get("id").asInt()).isEqualTo(1);
-
-
+		Assertions.assertThat(project.visibilityLevel()).isEmpty();
 	}
 }

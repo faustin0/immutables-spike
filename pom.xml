@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -13,7 +12,7 @@
     <groupId>com.example</groupId>
     <artifactId>immutablesDemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>immutablesDemo</name>
+    <name>immutables-spike</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -28,16 +27,14 @@
             <version>${immutables.version}</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
-            <groupId>org.immutables</groupId>
-            <artifactId>value</artifactId>
-            <classifier>annotations</classifier>
-            <version>2.8.1</version>
-            <scope>provided</scope>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-parameter-names</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jdk8</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

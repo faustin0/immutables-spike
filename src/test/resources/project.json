@@ -7,7 +7,7 @@
   "git_ssh_url":"git@example.com:gitlabhq/gitlab-test.git",
   "git_http_url":"http://example.com/gitlabhq/gitlab-test.git",
   "namespace":"GitlabHQ",
-  "visibility_level":20,
+  "visibility_level":null,
   "path_with_namespace":"gitlabhq/gitlab-test",
   "default_branch":"master",
   "homepage":"http://example.com/gitlabhq/gitlab-test",

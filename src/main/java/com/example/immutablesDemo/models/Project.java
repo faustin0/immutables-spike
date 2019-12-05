@@ -5,7 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.immutables.value.Value;
-import org.springframework.lang.Nullable;
+
+import java.util.OptionalInt;
 
 @Value.Immutable
 @JsonSerialize(as = ImmutableProject.class)
@@ -21,7 +22,10 @@ public interface Project {
     String webUrl();
 
     @JsonProperty("avatar_url")
-    Object avatarUrl();
+    @Value.Default
+    default String avatarUrl() {
+        return "";
+    }
 
     @JsonProperty("git_ssh_url")
     String gitSshUrl();
@@ -32,7 +36,7 @@ public interface Project {
     String namespace();
 
     @JsonProperty("visibility_level")
-    int visibilityLevel();
+    OptionalInt visibilityLevel();
 
     @JsonProperty("path_with_namespace")
     String pathWithNamespace();
