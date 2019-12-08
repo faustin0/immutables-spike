@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.immutables.value.Value;
 
+import java.util.Optional;
 import java.util.OptionalInt;
 
 @Value.Immutable
@@ -22,10 +23,7 @@ public interface Project {
     String webUrl();
 
     @JsonProperty("avatar_url")
-    @Value.Default
-    default String avatarUrl() {
-        return "";
-    }
+    Optional<String> avatarUrl();
 
     @JsonProperty("git_ssh_url")
     String gitSshUrl();
